@@ -3,6 +3,14 @@ body {
   font-family: 'Lato';
 }
 
+.bg-dark {background:#242221 !important}
+
+ul {margin-bottom:0; padding: 0}
+ul li, ol li {list-style:none}
+
+a {color: #242221}
+a:hover, a:focus {text-decoration:none; color:#e3c383 !important}
+button:hover{cursor: pointer}
 h1,
 h2,
 h3,
@@ -12,6 +20,10 @@ h6 {
   font-family: 'Catamaran';
   font-weight: 800 !important;
 }
+.navbar-brand {margin-bottom:10px}
+header {background:#e8ddcb; position: relative}
+header .navbar {position: static}
+
 
 .btn-xl {
   text-transform: uppercase;
@@ -73,41 +85,23 @@ header.masthead .masthead-content .masthead-heading {
 header.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
 }
+.top-link ul {padding-top:6px; padding-bottom:6px; margin-bottom:0;}
+.top-link ul li, .top-link ul li a {color:#fff; font-size:18px}
+.top-link ul li {padding:0 0 0 10px}
+.top-link ul li:last-child { padding-left:15px}
 
-header.masthead .bg-circle {
-  z-index: 0;
-  position: absolute;
-  border-radius: 100%;
-  background: black;
-}
+.main-menu { text-transform: uppercase;}
+.main-menu > li {display:block;font-size: 18px;border-bottom: 1px solid rgba(0,0,0,.1);}
+.main-menu > li a {display:inline-block;padding:10px 20px !important;color:rgba(36, 34, 33, 0.6) !important;font-weight: 600;}
+.main-menu > li a:hover {color:#000 !important;}
+.main-menu > li:hover > a {color:#000 !important;}
+.main-menu > li.active > a {color:#242221 !important;}
+.ico-switch {float:right;padding: 8px 15px !important;}
 
-header.masthead .bg-circle-1 {
-  height: 90rem;
-  width: 90rem;
-  bottom: -55rem;
-  left: -55rem;
-}
+.show > .ico-switch:before {content:"-";}
 
-header.masthead .bg-circle-2 {
-  height: 50rem;
-  width: 50rem;
-  top: -25rem;
-  right: -25rem;
-}
+.main-banner img {max-width: 100%}
 
-header.masthead .bg-circle-3 {
-  height: 20rem;
-  width: 20rem;
-  bottom: -10rem;
-  right: 5%;
-}
-
-header.masthead .bg-circle-4 {
-  height: 30rem;
-  width: 30rem;
-  top: -5rem;
-  right: 35%;
-}
 
 @media (min-width: 992px) {
   header.masthead {
@@ -126,30 +120,33 @@ header.masthead .bg-circle-4 {
   background-color: #ee0979 !important;
 }
 
-.btn-primary {
-  background-color: #ee0979;
-  border-color: #ee0979;
+.howtobuy {background:#fff; text-align:center; padding: 40px 20px 60px;}
+.howtobuy ul li {font-size:24px;text-align:center;vertical-align: middle;}
+.howtobuy ul li.arr {vertical-align:middle;padding:0 20px;margin-bottom: 50px;}
+.howtobuy ul li p {margin-top:15px}
+.howtobuy ul li img {max-width:100%}
+
+.title-1 {font-size:36px;margin:30px 0;display:inline-block;padding:20px 40px;border-bottom:1px solid;border-top:1px solid;position:relative; margin-bottom:50px; text-align: center!important; text-transform: uppercase}
+.title-1:before, .title-1:after {width: 10px;height: 10px;border-radius:50%;background:#e3c383;position:absolute;top: 35px;content:"";}
+.title-1:before {left:10px} 
+.title-1:after {right:10px}
+.loading:before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 25, 25, 0.3);
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #bd0760 !important;
-  border-color: #bd0760 !important;
-}
-
-.btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
-}
-
-.btn-secondary {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
-}
-
-.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #cc5500 !important;
-  border-color: #cc5500 !important;
-}
-
-.btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+/* :not(:required) hides these rules from IE9 and below */
+.loading:not(:required) {
+    /* hide "loading..." text */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
 }
