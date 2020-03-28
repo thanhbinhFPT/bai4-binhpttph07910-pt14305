@@ -150,3 +150,15 @@ header.masthead .masthead-content .masthead-subheading {
     background-color: transparent;
     border: 0;
 }
+.news {text-align: center; padding-bottom: 60px; padding-top: 40px}
+.news .post { text-align: left}
+.news .post h4 {line-height:30px; font-weight: 600; color: #000}
+.news .post .time {margin: 10px 0; font-size: 14px; color: #999; display: block}
+.news .post a.btn {float:right; text-transform: uppercase}
+.news .post img {max-width: 100%}
+footer {color:#fff; padding: 40px 20px 30px; margin-top: 60px; text-align: center}
+footer ul li a {color:rgba(255,255,255,.50); margin-top: 10px; display: block}
+footer .col-md-9 .col-md-3 {display: none}
+footer .col-md-9 .col-md-3.social {display: block; margin-bottom: 40px}
+footer .social li {display: inline-block; margin-left: 15px}
+footer .social li a {margin-top: 0;}
